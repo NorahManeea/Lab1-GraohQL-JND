@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 
 @Entity
-public class Location {
+public class Dog {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -12,18 +12,18 @@ public class Location {
     private String name;
     private String address;
 
-    public Location(Long id, String name, String address) {
+    public Dog(Long id, String name, String address) {
         this.id = id;
         this.name = name;
         this.address = address;
     }
 
-    public Location(String name, String address) {
+    public Dog(String name, String address) {
         this.name = name;
         this.address = address;
     }
 
-    public Location() {}
+    public Dog() {}
 
     public Long getId() {
         return id;
